@@ -38,7 +38,7 @@ uint16_t SFM3X00::readData()
 {
   uint8_t b[2];
 
-  Wire.requestFrom(this->sensorAddress, 2);
+  Wire.requestFrom((int)this->sensorAddress, (int)2);
 
   b[1] = Wire.read();
   b[0] = Wire.read();
