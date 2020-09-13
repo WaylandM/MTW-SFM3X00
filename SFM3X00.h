@@ -57,7 +57,7 @@ class SFM3X00
     uint16_t maxFlow;
 
     // construct sensor with desired I2C address
-    SFM3X00(byte address)
+    SFM3X00(uint8_t address)
     {
       this->sensorAddress = address;
     }
